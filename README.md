@@ -1,6 +1,16 @@
-# project-sample
-다음, 네이버 블로그 검색 어플리케이션 
+# project-sample-advance
+다음, 네이버 블로그 검색 어플리케이션     
+이 프로젝트는 [project-sample](https://github.com/seunghyeon87/project-sample)을 개선한 프로젝트 입니다.
 
+## 개선점
+1. 멀티 모듈 구성 및 모듈간 의존성 제약했습니다.
+    * api, domain, common 총 3가지 모듈이 있고, api는 domain과 common을 의존하고 domain은 common만 의존하도록 설계했습니다.
+
+2. 요청 파라미터 validation 추가
+    * 블로그 검색 API 요청 데이터 중 query에 대한 validation을 추가했고, BindException에 대한 ExceptionHandler를 추가해 에러 응답을 전달하도록 했습니다. 
+    
+아래 내용은 이전과 동일합니다.
+------
 ## 실행하기
 1. 블로그 검색
 ~~~
